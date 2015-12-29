@@ -3,6 +3,7 @@
 namespace Korko\Validator;
 
 use Illuminate\Support\ServiceProvider;
+use Validator;
 
 class ValidatorServiceProvider extends ServiceProvider
 {

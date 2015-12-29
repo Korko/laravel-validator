@@ -32,4 +32,9 @@ class ValidatorServiceProvider extends ServiceProvider
             return str_replace(':values', implode(', ', $parameters), $message);
         });
     }
+
+    public function register()
+    {
+        //
+    }
 }

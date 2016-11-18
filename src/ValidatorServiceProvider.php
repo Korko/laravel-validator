@@ -55,7 +55,7 @@ class ValidatorServiceProvider extends ServiceProvider
             return array_key_exists($value, $values);
         }, trans('korko::validation.fieldinkeys'));
 
-        Validator::replacer('fieldin', function ($message, $attribute, $rule, $parameters) {
+        Validator::replacer('fieldinkeys', function ($message, $attribute, $rule, $parameters) {
             return str_replace(':other', $parameters[0], $message);
         });
     }
